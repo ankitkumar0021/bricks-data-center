@@ -1,0 +1,151 @@
+.header_search_bar {
+  input {
+    @apply bg-white border-none outline-0 rounded-l-md py-2 px-4 text-lg h-full w-full;
+  }
+}
+
+
+
+
+
+
+
+
+.form_wrapper {
+  @apply space-y-3;
+
+  .form_input_field_wrapper {
+    @apply mb-4 relative w-full;
+  }
+
+  .form_input_field_wrapper_with_label {
+    @apply mb-8 relative;
+  }
+
+  .two_column_form_field_wrapper {
+    @apply flex flex-wrap sm:flex-nowrap gap-2 w-full;
+
+    .form_input_field_wrapper_with_label {
+      @apply w-full mb-2 relative;
+    }
+
+    .date_time_field {
+      @apply relative;
+
+      .react-datepicker-wrapper {
+        @apply w-full;
+      }
+    }
+  }
+
+  [data-slot="input-wrapper"] {
+    @apply border rounded-md h-11 border-[#EDEDED] shadow-none;
+  }
+
+  .custom_booking_form [data-slot="input-wrapper"] {
+    @apply border-[#EDEDED];
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.error {
+  @apply text-red-500 text-xs;
+}
+
+.required_icon {
+  @apply text-red-500 ml-1;
+}
+
+.form_field_wrapper {
+  @apply mb-4;
+
+  label {
+    @apply block mb-1 text-sm font-medium text-black/70;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-white mb-1 border border-[#ebe6e7] text-gray-900 text-sm rounded block w-full px-2.5 py-2 outline-none focus:ring-transparent;
+  }
+
+  .react-tel-input {
+    @apply mb-2;
+
+    .form-control {
+      @apply w-full h-10;
+    }
+
+    .search {
+      @apply flex;
+    }
+  }
+
+  &.phone_number {
+    input {
+      @apply pl-12 py-5 w-full;
+    }
+  }
+
+  .input_field_wrapper {
+    @apply mb-2 capitalize;
+
+    .input_field_wrapper_inner {
+      @apply grid sm:grid-cols-2 gap-x-4 gap-y-2 relative;
+
+      .inner_first {
+        @apply col-span-1 relative;
+
+        .required_icon {
+          @apply absolute left-[158px] top-[3px];
+        }
+      }
+
+      .inner_second {
+        @apply col-span-1 relative;
+
+        .required_icon {
+          @apply absolute left-[57px] top-[13px];
+        }
+      }
+    }
+  }
+
+  .modal_input_field_wrapper {
+    @apply mb-0;
+  }
+}
+
+.modal_content_wrapper {
+  @apply max-h-[350px] xl:max-h-[400px] overflow-y-auto pr-3;
+
+  &::-webkit-scrollbar-track {
+    background-color: #ded9d9;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ded9d9;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d72029;
+    border-radius: 10px;
+  }
+}

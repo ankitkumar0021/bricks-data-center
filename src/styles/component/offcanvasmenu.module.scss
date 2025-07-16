@@ -1,0 +1,42 @@
+.custom_offcanvas_conatiner {
+  .offcanvas_wrapper {
+    .offfcanvas_user_wrapper {
+      @apply flex gap-2 pl-4 pt-4;
+
+      .offfcanvas_logo {
+        @apply w-[50px] h-[50px] rounded-full border overflow-hidden;
+
+        .logo_img {
+          @apply h-full w-full object-cover;
+        }
+      }
+    }
+
+    .offcanvas_menu {
+      @apply grid divide-y-1 mt-3 border-t-1 border-[#DDE2EB] divide-[#DDE2EB];
+
+      .menu_list {
+        .menu_item {
+          @apply px-4 py-2 flex w-full cursor-pointer;
+        }
+      }
+
+      .currency_switch_wrapper {
+        .currency_switch {
+          @apply bg-transparent px-0 py-3 justify-start flex;
+          // background: #fff;
+
+          .top_bar_text {
+            @apply hidden;
+          }
+
+          .top_currency {
+            button {
+              @apply text-black/80;
+            }
+          }
+        }
+      }
+    }
+  }
+}
