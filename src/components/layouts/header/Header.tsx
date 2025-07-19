@@ -186,9 +186,9 @@ export default function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="px-4 py-2 text-blue-400 hover:text-blue-300 transition">
+            {/* <button className="px-4 py-2 text-blue-400 hover:text-blue-300 transition">
               Client Login
-            </button>
+            </button> */}
             <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition">
               Get Started
             </button>
