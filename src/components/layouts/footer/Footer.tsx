@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -36,12 +37,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="bg-blue-500 w-10 h-10 rounded-md flex items-center justify-center">
-                <span className="font-bold text-xl">B</span>
-              </div>
-              <span className="text-2xl font-bold text-white"><span className="text-blue-400">Bricks</span> Data Center</span>
-            </div>
+           <div className="w-32 h-14 rounded-md overflow-hidden flex items-center justify-center">
+                   <Image
+                     src="/homepage/logo1.png"
+                     alt="Bricks Logo"
+                     width={1000}
+                     height={1000}
+                   />
+                 </div>
             <p className="mb-6 max-w-md">We are committed to delivering exceptional web hosting solutions tailored to the unique requirements of our clients. Our comprehensive range of services includes GPU cloud, cloud servers, VPS, and web hosting server.</p>
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-4">

@@ -142,6 +142,7 @@
 // }
 
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -162,14 +163,17 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-blue-500 w-10 h-10 rounded-md flex items-center justify-center">
-              <span className="font-bold text-xl">B</span>
-            </div>
-            <span className="text-2xl font-bold">
-              <span className="text-blue-400">Bricks</span> Data Center
-            </span>
-          </Link>
+            <Link href="/" className="flex items-center space-x-2">
+      <div className="w-24 h-14 rounded-md overflow-hidden flex items-center justify-center">
+        <Image
+          src="/homepage/logo1.png"
+          alt="Bricks Logo"
+          width={1000}
+          height={1000}
+        />
+      </div>
+      
+    </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
